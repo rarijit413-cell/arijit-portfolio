@@ -1,0 +1,126 @@
+*{margin: 0;
+padding: 0;
+}
+.main{
+    width: 100%;
+    background: linear-gradient(to top , rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(https://i.ibb.co/cXK4YLnf/my-image.jpg)  ;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.navbar{
+    width: 1250px;
+    height: 75px;
+    margin: auto;
+}
+.icon{
+    
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color: bisque;
+    font-size: 35px;
+    text-align: left;
+    padding-top: 20px;
+}
+.menu{
+    width: 400px;
+    height: 70px;
+    float: left;
+    color: rgb(0, 255, 21);
+
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+
+    list-style: none;
+    margin-left: 55px;
+    margin-top: 27px;
+    font-size: 20px;
+    
+}
+ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+    font-family: Arial;
+    transition: 0.4s ease-in-out;
+}
+ul li a:hover{
+    color: tomato;
+}
+
+.search{
+    width: 330px;
+    float: left;
+    margin-left: 310px;
+}
+
+.srch{
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    color: aliceblue;
+    border: 1px solid orangered;
+    margin-top: 13px;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    background: orangered;
+    color: aquamarine;
+    border: 1px solid orangered;
+    border-left: none;
+    font-size: 15px;
+    margin-top: 13px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.btn:focus{
+    outline: none;
+}
+.srch:focus{
+    outline: none;
+}
+.content{
+    width: 1200px;
+    width: auto;
+    margin:auto;
+    position: relative;
+    color: white;
+}
+.content .par {
+     padding-left: 20px;
+     padding-bottom: 25px;
+     letter-spacing: 1.2px;
+     line-height: 30px;
+     font-size: 20px;
+}
+.content h1{
+    font-size: 70px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+.content span{
+    color: orangered;
+}
+.slog{
+    font-size: 40px;
+}
