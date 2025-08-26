@@ -3,45 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Webpage</title>
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="main">
         <div class="navbar">
-            <div class="icon">
-                <h2 class="logo">Arijit</h2>
-            </div>
-            <div class="menu">
-                <ul>
-                    <li ><a href="#">Home</a></li>
-                    <li ><a href="#">About</a></li>
-                    <li ><a href="#">Videos</a></li>
-                    <li ><a href="#">Photos</a></li>
-                    <li ><a href="#">Contact</a></li>
-                </ul>
-            </div>
-
-             <div class="search">
-                <input class="srch"  name="" type="search" placeholder="type to search">
-                <a href="#"><button class="btn">search</button></a>
-            </div>
-
+            <h2>Arijit</h2>
+            <ul class="icons">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Videos</a></li>
+                <li><a href="#">Photos</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Store</a></li>
+            </ul>
+                <i class="ri-menu-3-line">
+                  <div  class="dropdown"> 
+                     <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Videos</a></li>
+                        <li><a href="#">Photos</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Store</a></li>
+                     </ul>
+                  </div>
+                </i>
+            
         </div>
-
-            <div class="content">
-            <h1>My <span>Portfolio</span></h1>
-            <p class="par">Welcome Everyone! <br>This is my website </p>
-
-            <div class="slog">
-                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-                <ion-icon name="heart"></ion-icon>
+        <div class="content">
+            <div class="left">
+                <h1>My <span>Portfolio</span></h1>
+                <p class="par">Welcome Everyone! <br>This is my website </p>
+                <img class="mypic" src="image.jpg" >
             </div>
-
+            <div class="right">
+                <a href="https://www.facebook.com/share/1B7woLrPuG/"><i class="ri-facebook-circle-fill"></i></a>
+                <a href="https://www.instagram.com/arijit20259?igsh=OG9ham14N2wxb284"><i class="ri-instagram-line"></i></a>
+                <a href=""><i class="ri-linkedin-box-fill"></i></a>
+                <a href="http://t.me/arijit1707"><i class="ri-telegram-line"></i></a>
+            </div>
         </div>
-        
     </div>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
