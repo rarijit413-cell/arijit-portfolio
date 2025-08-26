@@ -1,126 +1,211 @@
-*{margin: 0;
-padding: 0;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.main{
+html, body{
+    height: 100%;
     width: 100%;
-    background: linear-gradient(to top , rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(https://i.ibb.co/cXK4YLnf/my-image.jpg)  ;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background: linear-gradient(to top , rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(p1.jpg);
     background-position: center;
     background-size: cover;
-    height: 100vh;
 }
+
+
+
+
 .navbar{
-    width: 1250px;
-    height: 75px;
-    margin: auto;
-}
-.icon{
-    
-    width: 200px;
-    float: left;
-    height: 70px;
-}
-
-.logo{
-    color: bisque;
-    font-size: 35px;
-    text-align: left;
-    padding-top: 20px;
-}
-.menu{
-    width: 400px;
-    height: 70px;
-    float: left;
-    color: rgb(0, 255, 21);
-
-}
-ul{
-    float: left;
+    height: 100px;
+    width: 100%;
+    /* background-color: antiquewhite; */
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
+    padding: 0 3vw;
+    border-bottom: 2px solid black;
 }
-ul li{
-
-    list-style: none;
-    margin-left: 55px;
-    margin-top: 27px;
-    font-size: 20px;
-    
+.icons{
+    display: flex;
+    /* background-color: blue; */
+    gap: 4vw;
+    align-items: center;
+    list-style-type: none;
 }
-ul li a{
-    text-decoration: none;
-    color: aliceblue;
+.icons li a{
+    font-size: 1.5vw;
     font-weight: bold;
-    font-family: Arial;
     transition: 0.4s ease-in-out;
-}
-ul li a:hover{
-    color: tomato;
-}
-
-.search{
-    width: 330px;
-    float: left;
-    margin-left: 310px;
-}
-
-.srch{
-    font-family: 'Times New Roman';
-    width: 200px;
-    height: 40px;
-    background: transparent;
-    color: aliceblue;
-    border: 1px solid orangered;
-    margin-top: 13px;
-    border-right: none;
-    font-size: 16px;
-    float: left;
-    padding: 10px;
-    border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px;
+    text-decoration: none;
+    color: black;
     
 }
-.btn{
-    width: 100px;
-    height: 40px;
-    background: orangered;
-    color: aquamarine;
-    border: 1px solid orangered;
-    border-left: none;
-    font-size: 15px;
-    margin-top: 13px;
-    border-bottom-right-radius: 5px;
-    border-top-right-radius: 5px;
+.icons li a:hover{
+    color: blue;
 }
-.btn:focus{
-    outline: none;
+.ri-menu-3-line{
+    font-size: 1.7vw;
+    font-weight: 800;
+    display: none;
 }
-.srch:focus{
-    outline: none;
+.navbar h2{
+    font-size: 3vw;
+    font-weight: 600;
+    color: bisque;
 }
+
+
+
+
 .content{
-    width: 1200px;
-    width: auto;
-    margin:auto;
+    width: 100%;
+    height: calc(100% - 100px);
+    /* background-color: bisque; */
+    display: flex;
+}
+.left{
+    width: 100%;
+    height: 100%;
+    /* background-color:red; */
+    padding: 3vw 3vw;
+}
+.left h1{
+    font-size: 6vw;
+}
+.left span{
+    color: chocolate;
+}
+.left p{
+    font-size: 3vw;
+    padding:0 0.4vw;
+    margin-top: 2vw;
+}
+.mypic{
+    border-radius: 50%;
+    width: 20vw;
+    height: 19vw;
+    margin-left: 1vw;
+    margin-top: 5vw;
+}
+
+
+
+
+
+.right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 24vw;
+    gap: 4vw;
+}
+.right a{
+    color: transparent;
+}
+.ri-facebook-circle-fill{
+    font-size: 3.5vw;
+    color: aliceblue;
+    }
+.ri-instagram-line{
+    font-size: 3.5vw;
+    color: aliceblue;
+}
+.ri-linkedin-box-fill{
+    font-size: 3.5vw;
+    color: aliceblue;
+}
+.ri-telegram-line{ 
+    font-size: 3.5vw;
+    color: aliceblue;
+ }
+.right a :hover{
+    zoom: 150%;
+}
+
+
+
+
+
+
+
+@media (max-width: 600px){
+    .navbar{
+        /* background-color: aquamarine; */
+        padding: 0 4vw;
+    }
+    .ri-menu-3-line{
+        display: block;
+        font-size: 8vw;
+        font-weight: 800;
+        transition: 0.4s ease-in-out;
+        margin-top: 80vw;
+        margin-left: 67vw;
+        display: flex;
+        background-color: aqua;
+    }
+
+
+
+
+    .left h1{
+        font-size: 10vw;
+    }
+    .icons li{
+        font-size: 2.2vw;
+        display: none;
+    }
+    .left p{
+        font-size: 4.5vw;
+    }
+    .mypic{
+    border-radius: 50%;
+    width: 50vw;
+    height: 50vw;
+    margin-left: 22vw;
+    margin-top: 25vw;
+}
+.navbar h2{
+    font-size: 7vw;
+    font-weight: 1000;
+}
+
+
+
+.right{
+    width: 10%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: last baseline;
+    gap: 10vw;
     position: relative;
-    color: white;
+    top: 80%;
+    right: 50%;
+    
 }
-.content .par {
-     padding-left: 20px;
-     padding-bottom: 25px;
-     letter-spacing: 1.2px;
-     line-height: 30px;
-     font-size: 20px;
+.ri-facebook-circle-fill{
+    font-size: 10vw;
+    color: aliceblue;
+    }
+.ri-instagram-line{
+    font-size: 10vw;
+    color: aliceblue;
 }
-.content h1{
-    font-size: 70px;
-    padding-left: 20px;
-    margin-top: 9%;
-    letter-spacing: 2px;
+.ri-linkedin-box-fill{
+    font-size: 10vw;
+    color: aliceblue;
 }
-.content span{
-    color: orangered;
-}
-.slog{
-    font-size: 40px;
+.ri-telegram-line{ 
+    font-size: 10vw;
+    color: aliceblue;
+ }
 }
